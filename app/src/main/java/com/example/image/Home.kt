@@ -1,18 +1,17 @@
 package com.example.image
 
 import android.annotation.SuppressLint
-import android.content.pm.PackageManager
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.storage.FirebaseStorage
-import java.io.ByteArrayInputStream
-import java.security.MessageDigest
-import java.security.Signature
-import java.security.cert.CertificateFactory
-import java.security.cert.X509Certificate
-import java.util.*
 import kotlin.collections.ArrayList
 
 class Home : AppCompatActivity() {
@@ -54,5 +53,24 @@ class Home : AppCompatActivity() {
 
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater : MenuInflater = menuInflater
+        inflater.inflate(R.menu.action_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.privacyPolicy -> {
+                val url = ""
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                startActivity(intent)
+            }
+            R.id.about -> {
+                startActivity(Intent(this, About::class.java))
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
 

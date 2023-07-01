@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1044448380699",
+    "project_id": "image-661f9",
+    "storage_bucket": "image-661f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044448380699:android:4f810c4dd40381504b35be",
+        "android_client_info": {
+          "package_name": "com.example.image"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvTno_X6JRIDz_u_VYVyTv5LF0mnHZYv8"
+        },
+        {
+          "current_key": "AIzaSyAXQvbD031BCko1gq8UD7CODE7nTbFtfzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044448380699:android:097b19ad3583536e4b35be",
+        "android_client_info": {
+          "package_name": "in.navedansari.animewalls"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvTno_X6JRIDz_u_VYVyTv5LF0mnHZYv8"
+        },
+        {
+          "current_key": "AIzaSyAXQvbD031BCko1gq8UD7CODE7nTbFtfzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

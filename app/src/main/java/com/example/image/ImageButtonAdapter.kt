@@ -35,12 +35,11 @@ class ImageButtonAdapter(
         holder.category.text = imageButtonList[position].imageName
         Glide.with(context).load(imageButtonList[position].imageUrl).into(holder.imageButton)
 
-        val imageButton : ImageButton = holder.itemView.findViewById(R.id.imageButton)
-        imageButton.setOnClickListener {
+        holder.imageButton.setOnClickListener {
 
             val scaleAnimation = ScaleAnimation(1f, 2f, 1f, 2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)
             scaleAnimation.duration = 300
-            imageButton.startAnimation(scaleAnimation)
+            holder.imageButton.startAnimation(scaleAnimation)
 
             var intent = Intent(context, ImagesScreen::class.java)
             intent.putExtra("category",imageButtonList[position].imageName)
