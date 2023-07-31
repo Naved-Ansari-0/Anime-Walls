@@ -62,7 +62,7 @@ class Home : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.privacyPolicy -> {
-                val url = ""
+                val url = "https://docs.google.com/document/d/1YVIgGpKQmOM18ey4oInEe8bjXF7QyBg8BjQDRt3lagY/edit?usp=sharing"
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 startActivity(intent)
             }
